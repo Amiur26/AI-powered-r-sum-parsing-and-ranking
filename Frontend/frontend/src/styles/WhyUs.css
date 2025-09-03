@@ -1,0 +1,48 @@
+.why-us-section { padding: 36px 0 44px; scroll-margin-top: 96px; }
+
+/* Larger, softer container */
+.why-us-container {
+  width: min(1140px, 94%);
+  margin: 0 auto;
+  padding: 36px 28px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 22px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 12px 36px rgba(0,0,0,.12);
+}
+
+.why-us-title { text-align: center; margin-bottom: 8px; color: #0f172a; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); }
+.why-us-description { text-align: center; color: #334155; max-width: 880px; margin: 0 auto 16px auto; font-size: clamp(16px, 1.6vw, 18px); line-height: 1.65; }
+
+/* Roomier 3-up grid (wraps to 2/1 on smaller screens) */
+.why-us-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 16px; }
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.96);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(15,23,42,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(15,23,42,0.14); }
+
+/* Feature heading chip a bit larger */
+.feature-card .chip { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 16.5px; margin-bottom: 6px; }
+.feature-card .muted { color: #475569 !important; font-size: 15.5px; line-height: 1.7; }
+
+/* CTA & trust */
+.why-us-cta { display: flex; justify-content: center; margin-top: 20px; }
+.why-us-button .arrow { margin-left: 8px; }
+.why-us-trust { margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(255,255,255,.96); color: #0f172a; border: 1px solid rgba(15,23,42,.06); border-radius: 16px; padding: 12px 14px; }
+.why-us-trust .muted { color: #475569; }
+
+/* Fade-in & stagger remains */
+.fade-in-section .feature-card { opacity: 0; transform: translateY(8px); }
+.fade-in-section.visible .feature-card { opacity: 1; transform: translateY(0); }
+.fade-in-section.visible .feature-card:nth-child(1) { transition: opacity .6s ease .05s, transform .6s ease .05s; }
+.fade-in-section.visible .feature-card:nth-child(2) { transition: opacity .6s ease .12s, transform .6s ease .12s; }
+.fade-in-section.visible .feature-card:nth-child(3) { transition: opacity .6s ease .19s, transform .6s ease .19s; }

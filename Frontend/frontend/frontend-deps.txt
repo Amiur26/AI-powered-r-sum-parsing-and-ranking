@@ -1,0 +1,21 @@
+axios@^1.10.0
+framer-motion@^12.23.12
+jwt-decode@^4.0.0
+lucide-react@^0.539.0
+react@^19.0.0
+react-dom@^19.0.0
+react-router-dom@^7.6.3
+@eslint/js@^9.19.0 (dev)
+@tailwindcss/postcss@^4.1.11 (dev)
+@types/react@^19.0.8 (dev)
+@types/react-dom@^19.0.3 (dev)
+@vitejs/plugin-react@^4.3.4 (dev)
+autoprefixer@^10.4.21 (dev)
+eslint@^9.19.0 (dev)
+eslint-plugin-react@^7.37.4 (dev)
+eslint-plugin-react-hooks@^5.0.0 (dev)
+eslint-plugin-react-refresh@^0.4.18 (dev)
+globals@^15.14.0 (dev)
+postcss@^8.5.6 (dev)
+tailwindcss@^4.1.11 (dev)
+vite@^6.1.0 (dev)
